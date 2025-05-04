@@ -1,0 +1,37 @@
+<div class="container">
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <table mat-table [dataSource]="billsResults" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef>#</th>
+          <td mat-cell *matCellDef="let bill">{{bill.id}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="billTitle">
+          <th mat-header-cell *matHeaderCellDef>Bill</th>
+          <td mat-cell *matCellDef="let bill">{{bill.billTitle}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="supporters">
+          <th mat-header-cell *matHeaderCellDef>Supporters</th>
+          <td mat-cell *matCellDef="let bill">{{bill.supporters}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="opposers">
+          <th mat-header-cell *matHeaderCellDef>Opposers</th>
+          <td mat-cell *matCellDef="let bill">{{bill.opposers}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="primarySponsor">
+          <th mat-header-cell *matHeaderCellDef>Primary Sponsor</th>
+          <td mat-cell *matCellDef="let bill">{{bill.primarySponsor}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+    </mat-card-content>
+  </mat-card>
+</div>
