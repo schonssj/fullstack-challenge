@@ -1,0 +1,14 @@
+# TakeHomeTest.Front
+/src/TakeHomeTest.Front/node_modules/
+/src/TakeHomeTest.Front/.angular/
+
+# TakeHomeTest.API
+/src/TakeHomeTest.API/.vs/
+/src/TakeHomeTest.API/bin/
+/src/TakeHomeTest.API/obj/
+
+# TakeHomeTest.Tests
+/src/TakeHomeTest.Tests/bin/
+/src/TakeHomeTest.Tests/obj/
+*.user
+*.sln*
